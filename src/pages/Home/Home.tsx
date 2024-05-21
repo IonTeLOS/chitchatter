@@ -37,7 +37,7 @@ export function Home({ userId }: HomeProps) {
   const navigate = useNavigate()
 
   useEffect(() => {
-    setTitle('Chat')
+    setTitle('Chitchatter')
   }, [setTitle])
 
   const handleRoomNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -100,7 +100,7 @@ export function Home({ userId }: HomeProps) {
           </Typography>
           <FormControl fullWidth>
             <TextField
-              label="Room name (generated client-side)"
+              label="Room name"
               variant="outlined"
               value={roomName}
               onChange={handleRoomNameChange}
@@ -133,7 +133,7 @@ export function Home({ userId }: HomeProps) {
               }}
               disabled={!isRoomNameValid}
             >
-              Join public room
+              Create room
             </Button>
             <Button
               variant="contained"
@@ -144,7 +144,7 @@ export function Home({ userId }: HomeProps) {
               }}
               disabled={!isRoomNameValid}
             >
-              Join private room
+              Create room (with password)
             </Button>
             <Button
               variant="contained"
@@ -156,25 +156,9 @@ export function Home({ userId }: HomeProps) {
               }}
               disabled={!isRoomNameValid}
             >
-              Get embed code
-            </Button>
-          </Box>
-        </Form>
-      </Main>
-      <Divider sx={{ my: 2 }} />
-      <Box
-        sx={{
-          maxWidth: theme.breakpoints.values.sm,
-          mx: 'auto',
-          textAlign: 'center',
-          px: 2,
-        }}
-      >
         <Typography variant="body1">
-          This is a free communication tool that is designed for simplicity,
-          privacy, and security. All interaction between you and your online
-          peers is encrypted. There is no record of your conversation once you
-          all leave.
+          This is a free, direct communication tool designed with simplicity,
+          privacy, and security in mind.
         </Typography>
       </Box>
       <Box
