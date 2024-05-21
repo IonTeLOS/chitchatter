@@ -130,7 +130,7 @@ export function Home({ userId }: HomeProps) {
               onClick={handleJoinPrivateRoomClick}
               sx={{
                 marginTop: 2,
-                width: '35%',
+                width: '42%',
               }}
               disabled={!isRoomNameValid}
             >
@@ -142,7 +142,7 @@ export function Home({ userId }: HomeProps) {
               sx={{
                 marginTop: 2,
                 marginLeft: 2,
-                width: '35%',
+                width: '42%',
               }}
               disabled={!isRoomNameValid}
             >
