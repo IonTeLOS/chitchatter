@@ -110,16 +110,6 @@ export const Drawer = ({ isDrawerOpen, onDrawerClose, theme }: DrawerProps) => {
             </ListItemButton>
           </ListItem>
         </Link>
-        <Link to={routes.DISCLAIMER}>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <ReportIcon />
-              </ListItemIcon>
-              <ListItemText primary="Disclaimer" />
-            </ListItemButton>
-          </ListItem>
-        </Link>
         <ListItem disablePadding>
           <ListItemButton onClick={handleColorModeToggleClick}>
             <ListItemIcon>
@@ -133,27 +123,6 @@ export const Drawer = ({ isDrawerOpen, onDrawerClose, theme }: DrawerProps) => {
           </ListItemButton>
         </ListItem>
         <Divider />
-        <ListItem>
-          <Typography variant="subtitle2">
-            Build signature:{' '}
-            <Typography
-              sx={{
-                fontFamily: 'monospace',
-                display: 'inline',
-              }}
-            >
-              <MuiLink
-                target="_blank"
-                rel="noopener"
-                href={`${import.meta.env.VITE_GITHUB_REPO}/commit/${
-                  commit.hash
-                }`}
-              >
-                {commit.shortHash}
-              </MuiLink>
-            </Typography>
-          </Typography>
-        </ListItem>
       </List>
     </MuiDrawer>
   )
