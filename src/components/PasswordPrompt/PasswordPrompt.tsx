@@ -34,13 +34,11 @@ export const PasswordPrompt = ({
         <DialogContent>
           <DialogContentText sx={{ mb: 2 }}>
             You will only be able to connect to room peers that enter the same
-            password. Due to the decentralized nature of Chitchatter, it is
-            impossible to know if the password you enter will match the password
-            entered by other peers.
+            password.
           </DialogContentText>
           <DialogContentText>
-            If there is a mismatch, you will be in the room but be unable to
-            connect to others. An error will not be shown.
+            If there is a mismatch, you will be unable to
+            connect to others. 
           </DialogContentText>
           <TextField
             autoFocus
