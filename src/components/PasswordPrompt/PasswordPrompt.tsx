@@ -37,8 +37,7 @@ export const PasswordPrompt = ({
             password.
           </DialogContentText>
           <DialogContentText>
-            If there is a mismatch, you will be unable to
-            connect to others. 
+            No error is shown in case of a mismatch. 
           </DialogContentText>
           <TextField
             autoFocus
