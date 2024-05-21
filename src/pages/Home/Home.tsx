@@ -146,6 +146,18 @@ export function Home({ userId }: HomeProps) {
             >
               Create room (with password)
             </Button>
+          </Box>
+        </Form>
+      </Main>
+      <Divider sx={{ my: 2 }} />
+      <Box
+        sx={{
+          maxWidth: theme.breakpoints.values.sm,
+          mx: 'auto',
+          textAlign: 'center',
+          px: 2,
+        }}
+      >  
         <Typography variant="body1">
           This is a free, direct communication tool designed with simplicity,
           privacy, and security in mind.
