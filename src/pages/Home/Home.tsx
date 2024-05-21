@@ -146,16 +146,6 @@ export function Home({ userId }: HomeProps) {
             >
               Create room (with password)
             </Button>
-            <Button
-              variant="contained"
-              color="secondary"
-              onClick={handleGetEmbedCodeClick}
-              sx={{
-                marginTop: 2,
-                marginLeft: 2,
-              }}
-              disabled={!isRoomNameValid}
-            >
         <Typography variant="body1">
           This is a free, direct communication tool designed with simplicity,
           privacy, and security in mind.
