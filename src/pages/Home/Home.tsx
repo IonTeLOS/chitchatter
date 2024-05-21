@@ -37,7 +37,7 @@ export function Home({ userId }: HomeProps) {
   const navigate = useNavigate()
 
   useEffect(() => {
-    setTitle('Chitchatter')
+    setTitle('Chat')
   }, [setTitle])
 
   const handleRoomNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -125,26 +125,26 @@ export function Home({ userId }: HomeProps) {
               justifyContent: 'center',
             }}
           >
-            <Button
+             <Button
               variant="contained"
-              onClick={handleJoinPublicRoomClick}
+              onClick={handleJoinPrivateRoomClick}
               sx={{
                 marginTop: 2,
               }}
               disabled={!isRoomNameValid}
             >
-              Create room
+              Create room (with password)
             </Button>
             <Button
               variant="contained"
-              onClick={handleJoinPrivateRoomClick}
+              onClick={handleJoinPublicRoomClick}
               sx={{
                 marginTop: 2,
                 marginLeft: 2,
               }}
               disabled={!isRoomNameValid}
             >
-              Create room (with password)
+              Create room
             </Button>
           </Box>
         </Form>
@@ -160,7 +160,7 @@ export function Home({ userId }: HomeProps) {
       >  
         <Typography variant="body1">
           This is a free, direct communication tool designed with simplicity,
-          privacy, and security in mind.
+          privacy and security in mind.
         </Typography>
       </Box>
       <Box
