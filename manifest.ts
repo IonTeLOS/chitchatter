@@ -1,18 +1,9 @@
 import { ManifestOptions } from 'vite-plugin-pwa'
 
-function generateRandom(min = 0, max = 100000000000000000) {
-
-    // find diff
-    let difference = max - min;
+function generateRandom() {
 
     // generate random number 
-    let rand = Math.random();
-
-    // multiply with difference 
-    rand = Math.floor( rand * difference);
-
-    // add with min value 
-    rand = rand + min;
+    let rand = crypto.getRandomValues(new Uint32Array(1))[0]/2**32;
 
     return rand;
 }
