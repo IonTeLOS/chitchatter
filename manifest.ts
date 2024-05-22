@@ -1,12 +1,5 @@
 import { ManifestOptions } from 'vite-plugin-pwa'
-
-function generateRandom() {
-
-    // generate random number 
-    let rand = crypto.getRandomValues(new Uint32Array(1))[0]/2**32;
-
-    return rand;
-}
+import { v4 as uuidv4 } from 'uuid';
 
 export const manifest: Partial<ManifestOptions> = {
   short_name: 'PChat',
@@ -85,7 +78,7 @@ export const manifest: Partial<ManifestOptions> = {
     },
     {
       name: 'Create room',
-      url: 'https://pchat.xyz/public/' + generateRandom(),
+      url: 'https://pchat.xyz/public/' + uuidv4(),
       icons: [
         {
           src: 'logo512.png',
