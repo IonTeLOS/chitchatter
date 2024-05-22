@@ -1,5 +1,7 @@
 import { ManifestOptions } from 'vite-plugin-pwa'
 
+let x = Math.floor((Math.random() * 100000000000000000000) + 1);
+
 export const manifest: Partial<ManifestOptions> = {
   short_name: 'PChat',
   name: 'PChat',
@@ -77,7 +79,7 @@ export const manifest: Partial<ManifestOptions> = {
     },
     {
       name: 'Create room',
-      url: './private/:roomId',
+      url: 'https://pchat.xyz/public/x',
 ',
       icons: [
         {
