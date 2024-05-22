@@ -77,7 +77,8 @@ export const manifest: Partial<ManifestOptions> = {
     },
     {
       name: 'Create room',
-      url: './disclaimer',
+      url: './private/:roomId',
+',
       icons: [
         {
           src: 'logo512.png',
