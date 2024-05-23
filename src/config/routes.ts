@@ -1,5 +1,6 @@
 export enum routes {
   ABOUT = '/about',
+  DIRECT = '/direct.html',
   DISCLAIMER = '/disclaimer',
   INDEX_HTML = '/index.html',
   PRIVATE_ROOM = '/private/:roomId',
