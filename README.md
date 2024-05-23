@@ -2,8 +2,6 @@
 
 ![Chitchatter logo](./public/logo/logo.svg)
 
-<sub>Logo provided by [@ramyashreeshetty](https://github.com/ramyashreeshetty)</sub>
-
 PChat is a fork of Chitchatter.
 
 Chitchatter is a free (as in both price and freedom) communication tool. Designed to be the simplest way to connect with others privately and securely, it is:
