@@ -110,6 +110,7 @@ export function Home({ userId }: HomeProps) {
                     aria-label="Regenerate room id"
                     onClick={() => setRoomName(uuid())}
                     size="small"
+                    sx={{ display: 'none' }}
                   >
                     <Cached />
                   </IconButton>
