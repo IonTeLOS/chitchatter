@@ -5,7 +5,7 @@ export const manifest: Partial<ManifestOptions> = {
   short_name: 'PChat',
   name: 'PChat',
   description:
-    'PChat is a free, open source communication tool. All communication is encrypted and lives in your browser, not on an server. Enjoy!',
+    'PChat is a free, open source communication tool. All messages are encrypted and reside in your browser, not on any server. Enjoy!',
   icons: [
     {
       src: 'favicon.ico',
@@ -78,7 +78,7 @@ export const manifest: Partial<ManifestOptions> = {
     },
     {
       name: 'Create room',
-      url: '.direct.html',
+      url: './direct.html',
       icons: [
         {
           src: 'logo512.png',
