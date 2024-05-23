@@ -78,7 +78,7 @@ export const manifest: Partial<ManifestOptions> = {
     },
     {
       name: 'Create room',
-      url: './direct',
+      url: 'https://pchat.xyz/direct.html',
       icons: [
         {
           src: 'logo512.png',
