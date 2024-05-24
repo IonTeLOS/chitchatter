@@ -40,7 +40,7 @@ export const Direct = () => {
         ref={iframeRef}
         src="/dir.html"
         title="Direct HTML"
-        style={{ width: '100%', height: '85vh', border: 'none' }}
+        style={{ width: '100%', height: '90vh', border: 'none' }}
       />
     </div>
   );
