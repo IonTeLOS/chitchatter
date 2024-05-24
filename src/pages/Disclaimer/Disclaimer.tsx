@@ -1,19 +1,15 @@
-import { useContext, useEffect, useState } from 'react';
-import { ShellContext } from 'contexts/ShellContext';
+import { useContext, useEffect } from 'react'
+import useTheme from '@mui/material/styles/useTheme'
+
+import { ShellContext } from 'contexts/ShellContext'
 
 export const Disclaimer = () => {
-  const { setTitle } = useContext(ShellContext);
-  const [htmlFileString, setHtmlFileString] = useState('');
-
-  async function fetchHtml() {
-    const response = await fetch('direct.html');
-    const text = await response.text();
-    setHtmlFileString(text);
-  }
+  const { setTitle } = useContext(ShellContext)
+  const theme = useTheme()
 
   useEffect(() => {
-    fetchHtml();
-  }, []);
+    setTitle('Create room')
+  }, [setTitle])
 
   return (
             <a href="/direct.html" target="_blank">
