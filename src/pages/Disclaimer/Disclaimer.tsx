@@ -40,7 +40,7 @@ export const Disclaimer = () => {
         ref={iframeRef}
         src="/direct.html"
         title="Direct HTML"
-        style={{ width: '100%', height: '100vh', border: 'none' }}
+        style={{ width: '100%', height: '85vh', border: 'none' }}
       />
     </div>
   );
