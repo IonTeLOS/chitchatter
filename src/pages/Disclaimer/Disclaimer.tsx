@@ -1,4 +1,6 @@
 import { useContext, useEffect } from 'react'
+import useTheme from '@mui/material/styles/useTheme'
+import { ShellContext } from 'contexts/ShellContext'
 
 function Direct() {
   let[htmlFileString, setHtmlFileString] = useState();
@@ -9,6 +11,14 @@ function Direct() {
   useEffect(() => {
     fetchHtml();
   }, []);
+
+export const Disclaimer = () => {
+  const { setTitle } = useContext(ShellContext)
+  const theme = useTheme()
+
+  useEffect(() => {
+    setTitle('Create room')
+  }, [setTitle])
 
   return(
     <div className="Direct">
