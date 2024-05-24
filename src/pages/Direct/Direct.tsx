@@ -38,7 +38,7 @@ export const Direct = () => {
     <div className="Direct">
       <iframe
         ref={iframeRef}
-        src="/direct.html"
+        src="/dir.html"
         title="Direct HTML"
         style={{ width: '100%', height: '85vh', border: 'none' }}
       />
