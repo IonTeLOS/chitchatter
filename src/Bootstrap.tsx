@@ -230,6 +230,7 @@ const Bootstrap = ({
                   />
                 ))}
                 <Route path={routes.ABOUT} element={<About />} />
+                <Route path={routes.DIRECT} element={<Direct />} />
                 <Route path={routes.DISCLAIMER} element={<Disclaimer />} />
                 <Route
                   path={routes.SETTINGS}
