@@ -1,19 +1,35 @@
-import { useContext, useEffect } from 'react'
-import useTheme from '@mui/material/styles/useTheme'
-
-import { ShellContext } from 'contexts/ShellContext'
+import React, { useContext, useEffect, useState } from 'react';
+import { useTheme } from '@mui/material/styles';
+import { ShellContext } from 'contexts/ShellContext';
 
 export const Disclaimer = () => {
-  const { setTitle } = useContext(ShellContext)
-  const theme = useTheme()
+  const { setTitle } = useContext(ShellContext);
+  const theme = useTheme();
+  const [htmlFileString, setHtmlFileString] = useState('');
 
   useEffect(() => {
-    setTitle('Create room')
-  }, [setTitle])
+    setTitle('Create room');
+    
+    const fetchHtml = async () => {
+      try {
+        const response = await fetch('/direct.html');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const text = await response.text();
+        setHtmlFileString(text);
+      } catch (error) {
+        console.error('Failed to fetch HTML:', error);
+      }
+    };
+
+    fetchHtml();
+  }, [setTitle]);
 
   return (
-            <a href="/direct.html" target="_blank">
-                Create room
-            </a>
-    )
-}
+    <div className="Direct">
+      <div dangerouslySetInnerHTML={{ __html: htmlFileString }}></div>
+    </div>
+  );
+};
+
