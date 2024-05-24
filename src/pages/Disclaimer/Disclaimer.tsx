@@ -16,9 +16,8 @@ export const Disclaimer = () => {
   }, []);
 
   return (
-    <div className="Direct">
-      <div dangerouslySetInnerHTML={{ __html: htmlFileString }}></div>
-    </div>
-  );
-};
-
+            <a href="/direct.html" target="_blank">
+                Create room
+            </a>
+    )
+}
