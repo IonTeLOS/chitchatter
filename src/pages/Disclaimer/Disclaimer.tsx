@@ -6,7 +6,7 @@ export const Disclaimer = () => {
   let[htmlFileString, setHtmlFileString] = useState();
 
   async function fetchHtml() {
-    setHtmlFileString(await (await fetch(`direct.htmt`)).text());
+    setHtmlFileString(await (await fetch(`direct.html`)).text());
   }
   useEffect(() => {
     fetchHtml();
