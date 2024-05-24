@@ -26,5 +26,3 @@ function Direct() {
     </div>
   );
 }
-
-export default Direct;
